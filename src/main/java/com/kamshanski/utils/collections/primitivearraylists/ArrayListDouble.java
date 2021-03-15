@@ -101,12 +101,10 @@ public class ArrayListDouble {
     // Only for size > orig
     public static double[] interpolate(double[] orig, int size) {
         if (orig.length < 1 || size < 1) {
-            U.nout("Bad input 1");
             return ArrayListDouble.arrayOf(0,1);
         }
 
         if (orig.length < 2) {
-            U.nout("Bad input 2");
             return ArrayListDouble.arrayOf(orig[0], size);
         }
 
