@@ -146,4 +146,14 @@ public class ArrayListDouble {
         Arrays.fill(ar, value);
         return ar;
     }
+
+    public static double[] doubleRange(int from, int to, int step) {
+        int len = (to - from) / step;
+        double[] ar = new double[len];
+        for (int i = 0, val = from; val < to; i++) {
+            ar[i] = val;
+            val+=step;
+        }
+        return ar;
+    }
 }
